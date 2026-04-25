@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Course Momentum Engine 🚀</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      background: #0f172a;
+      color: white;
+    }
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      display: inline-block;
+      margin-top: 50px;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background: #22c55e;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background: #16a34a;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🚀 Course Momentum Engine</h1>
+
+  <div class="card">
+    <h2>🔥 Streak: <span id="streak">0</span></h2>
+    <h2>⭐ XP: <span id="xp">0</span></h2>
+    <button onclick="completeLesson()">Complete Lesson</button>
+  </div>
+
+  <script>
+    let xp = localStorage.getItem("xp") || 0;
+    let streak = localStorage.getItem("streak") || 0;
+    let lastDate = localStorage.getItem("lastDate");
+
+    document.getElementById("xp").innerText = xp;
+    document.getElementById("streak").innerText = streak;
+
+    function completeLesson() {
+      xp = parseInt(xp) + 10;
+
+      let today = new Date().toDateString();
+
+      if (lastDate) {
+        let diff = (new Date(today) - new Date(lastDate)) / (1000 * 60 * 60 * 24);
+
+        if (diff === 1) {
+          streak++;
+        } else if (diff > 1) {
+          streak = 1;
+        }
+      } else {
+        streak = 1;
+      }
+
+      lastDate = today;
+
+      localStorage.setItem("xp", xp);
+      localStorage.setItem("streak", streak);
+      localStorage.setItem("lastDate", lastDate);
+
+      document.getElementById("xp").innerText = xp;
+      document.getElementById("streak").innerText = streak;
+    }
+  </script>
+
+</body>
+</html>
