@@ -188,7 +188,7 @@ Beyond the standard annual billing discount, Teachable runs enhanced promotions 
 
 ### Teachable Black Friday Sale (November) — Deepest Annual Discount
 
-Teachable's Black Friday promotion is historically the best time to get an extra discount on top of annual billing. In 2025, Black Friday offered an additional 20% off annual plans on top of the standard annual discount — bringing the Pro plan to an effective price close to $79/month for the first year. The promotion ran for approximately one week from the Monday before Thanksgiving through Cyber Monday. Not live yet
+[Teachable's Black Friday promotion](https://teachblackfriday.com/) is historically the best time to get an extra discount on top of annual billing. In 2025, Black Friday offered an additional 20% off annual plans on top of the standard annual discount — bringing the Pro plan to an effective price close to $79/month for the first year. The promotion ran for approximately one week from the Monday before Thanksgiving through Cyber Monday. Not live yet
 
 ### Teachable New Year Promotion (January)
 
